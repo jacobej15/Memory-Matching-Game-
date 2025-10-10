@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    background-color: #7bcdd8; /* light blue background */
+    font-family: sans-serif;
+}
+
+.navbar {
+  background-color: #4c6ef5; /*  blue */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.navbar-logo {
+  font-weight: 600;
+  font-size: 1.3em;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover,
+.navbar-links a:focus {
+  color: #e066ff; /* highlight color on hover purple*/
+  outline: none;
+}
+
+#game-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  max-width: 450px;
+  margin: 30px auto;
+}
+   
+
+/* Cards */
+.card {
+  background-color: white;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card:hover {
+  transform: scale(1.05) rotateY(var(--rotate, 0deg));
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card.flipped {
+  border-color: #000000;
+}
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.card-front {
+  /* this is the colored face */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border: 2px solid #007bff;
+}
+
+.card-back {
+  /* the default back of the card */
+  background-color: #007bff;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* Accessibility focus */
+.card:focus {
+  outline: 3px solid #1ab822;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  #game-board {
+    max-width: 300px;
+  }
+
+  .card {
+    height: 80px;
+  }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+} 
