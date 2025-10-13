@@ -1,11 +1,12 @@
 body {
-    margin: 0;
-    background-color: #7bcdd8; /* light blue background */
-    font-family: sans-serif;
+  margin: 0;
+  background-color: #7bcdd8; /* Light blue background */
+  font-family: 'Poppins', sans-serif;
 }
 
+/*Navbar*/
 .navbar {
-  background-color: #4c6ef5; /*  blue */
+  background-color: #00ebfc; /* Bright blue */
   color: white;
   display: flex;
   justify-content: space-between;
@@ -30,15 +31,23 @@ body {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
 .navbar-links a:hover,
 .navbar-links a:focus {
-  color: #e066ff; /* highlight color on hover purple*/
+  color: #e066ff; /* Purple highlight */
   outline: none;
 }
 
+/*Image*/
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/*Game*/
 #game-board {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -47,61 +56,56 @@ body {
   max-width: 450px;
   margin: 30px auto;
 }
-   
 
-/* Cards */
+/*Card functions*/
 .card {
+  position: relative;
   background-color: white;
-  border: 2px solid #007bff;
+  border: 2px solid #000;
   border-radius: 10px;
   height: 100px;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, background-color 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.05);
 }
-.card:hover {
-  transform: scale(1.05) rotateY(var(--rotate, 0deg));
-}
 
 .card.flipped {
   transform: rotateY(180deg);
+  border-color: #000;
 }
 
-.card.flipped {
-  border-color: #000000;
-}
-.card-front, .card-back {
+/* Front & Back Faces */
+.card-front,
+.card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
   border-radius: 10px;
+  backface-visibility: hidden;
 }
 
 .card-front {
-  /* this is the colored face */
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
-  border: 2px solid #007bff;
+  border: 2px solid #030f1d;
 }
 
 .card-back {
-  /* the default back of the card */
-  background-color: #007bff;
-  color: white;
+  background-color: white;
+  border: 2px solid #000;
   transform: rotateY(180deg);
 }
-/* Accessibility focus */
+
 .card:focus {
-  outline: 3px solid #1ab822;
+  outline: 3px solid #1ab822; /* Green focus outline */
 }
 
-/* Responsive adjustments */
+/*Some design*/
 @media (max-width: 500px) {
   #game-board {
     max-width: 300px;
@@ -112,9 +116,9 @@ body {
   }
 }
 
-/* Reduced motion for accessibility */
+/*Support to design*/
 @media (prefers-reduced-motion: reduce) {
   .card {
     transition: none;
   }
-} 
+}
