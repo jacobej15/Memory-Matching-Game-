@@ -1,3 +1,5 @@
+document.addEventListener('DOMContentLoaded', function() {
+
 // Buttons
 const restartBtn = document.getElementById("restart-btn");
 const hintsBtn = document.getElementById("hints-btn");
@@ -199,3 +201,4 @@ function showHints(e) {
     });
   }, 1500);
 }
+});
