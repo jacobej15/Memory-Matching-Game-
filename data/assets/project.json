@@ -1,0 +1,19 @@
+[{
+      "id": "memory-game",
+      "rank": 2,
+      "name": "Memory Matching Game",
+      "tagline": "Interactive 3D color-matching challenge",
+      "description": "Engaging memory card game with smooth 3D flip animations, real-time scoring, timer, player persistence, and hint system. Built from scratch with vanilla JavaScript.",
+      "year": 2025,
+      "liveDemo": "https://jacobej15.github.io/Memory-Matching-Game-/",
+      "sourceCode": "https://github.com/jacobej15/Memory-Matching-Game-",
+      "thumbnail": "https://raw.githubusercontent.com/jacobej15/Memory-Matching-Game-/main/screenshot.png",
+      "technologies": ["HTML5", "CSS3 (3D Transforms)", "Vanilla JS", "Bootstrap 5", "localStorage", "Accessibility"],
+      "achievements": [
+        "Smooth 3D card flip animation using preserve-3d",
+        "Player name persistence across sessions",
+        "100 Accessibility Score (WAVE + axe)",
+        "Mobile-responsive grid layout",
+        "Reduced motion support"]
+    }
+]

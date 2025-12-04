@@ -1,0 +1,79 @@
+{
+  "achievements": [
+    {
+      "id": "memory-matching-game",
+      "title": "Memory Matching Game – Interactive Color-Match Challenge",
+      "type": "Featured Project & Game Development Achievement",
+      "dateCompleted": "2025-04-01",
+      "liveDemo": "https://jacobej15.github.io/Memory-Matching-Game-/",
+      "sourceCode": "https://github.com/jacobej15/Memory-Matching-Game-",
+      "description": "A fully interactive memory card game built with vanilla JavaScript, featuring card flipping animations, match detection, scoring, timer, player persistence, and a hint system. Designed with accessibility, responsive layout, and smooth 3D flip transitions.",
+      "impact": [
+        "Implemented 3D CSS card flip animation using transform-style: preserve-3d",
+        "Added player name persistence with localStorage",
+        "Real-time game stats: attempts, score, and timer",
+        "Seeded shuffle algorithm for consistent gameplay (reproducible randomness)",
+        "Accessibility-first: keyboard navigation, focus indicators, and aria-live updates"
+      ],
+      "technologies": [
+        "HTML5",
+        "CSS3 (Grid, Flexbox, 3D Transforms)",
+        "Vanilla JavaScript (ES6+)",
+        "Bootstrap 5",
+        "Google Fonts (Poppins)",
+        "Responsive Design",
+        "Accessibility (a11y) Best Practices"
+      ],
+      "keyFeatures": [
+        "16-card dynamic board with color matching",
+        "Smooth 3D flip animation on click",
+        "Live timer, attempts counter, and scoring system",
+        "Player name input with localStorage persistence",
+        "Restart & Hints functionality",
+        "Mobile-responsive grid layout",
+        "Win detection with celebratory alert",
+        "Reduced motion support via prefers-reduced-motion"
+      ],
+      "metrics": {
+        "totalLines": "~380 (HTML + CSS + JS)",
+        "cardsInGame": 16,
+        "pairsToMatch": 8,
+        "performanceScore": "99 (Lighthouse)",
+        "accessibilityScore": "100 (WAVE & axe)",
+        "mobileFriendly": true
+      },
+      "tags": [
+        "JavaScript Game",
+        "Front-End Project",
+        "Interactive Web App",
+        "Memory Game",
+        "Portfolio Piece",
+        "Vanilla JS",
+        "Achievement",
+        "Open Source"
+      ],
+      "isFeatured": true,
+      "thumbnail": "https://raw.githubusercontent.com/jacobej15/Memory-Matching-Game-/main/screenshot.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/jacobej15/Memory-Matching-Game-/main/screenshot-gameplay.png",
+        "https://raw.githubusercontent.com/jacobej15/Memory-Matching-Game-/main/screenshot-mobile.png"
+      ],
+      "playable": true,
+      "difficulty": "Beginner-Friendly Challenge"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 2,
+      "name": "Memory Matching Game",
+      "shortDescription": "Engaging color-matching memory game with 3D flips and real-time scoring",
+      "role": "Full-Stack Developer & Game Designer",
+      "year": 2025,
+      "link": "https://jacobej15.github.io/Memory-Matching-Game-/",
+      "github": "https://github.com/jacobej15/Memory-Matching-Game-",
+      "featured": true,
+      "category": "Games & Interactive"
+    }
+  ]
+}
